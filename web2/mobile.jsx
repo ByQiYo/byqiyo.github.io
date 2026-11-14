@@ -79,6 +79,7 @@ function HomeApp() {
   return (
     <div className="qy-app-home">
       <HeroStories />
+      <Pitch />
       <section className="qy-app-intro">
         <img loading="lazy" decoding="async" src="assets/byqiyo-q.png" alt="" className="qy-card-q" />
         <p className="qy-card-lead">{tr(QY.home.intro, lang)}</p>

@@ -34,6 +34,22 @@ function HeroSlides() {
   );
 }
 
+// Presentación breve bajo la portada: quién soy, qué hago y qué busco.
+function Pitch() {
+  const { lang, go } = useApp();
+  const es = lang === 'es', p = QY.pitch, c = QY.contact;
+  return (
+    <section className="qy-pitch">
+      <span className="qy-eyebrow">{tr(p.who, lang)}</span>
+      <p className="qy-pitch-t">{tr(p.t, lang)} <strong>{tr(p.seek, lang)}</strong></p>
+      <div className="qy-pitch-btns">
+        {c.cv && <a className="qy-pitch-b on" href={c.cv} target="_blank" rel="noopener">{es ? 'Descargar CV' : 'Download CV'} ↓</a>}
+        {c.linkedin && <a className="qy-pitch-b" href={c.linkedin} target="_blank" rel="noopener">LinkedIn ↗</a>}
+        <button className="qy-pitch-b" onClick={() => go('contact')}>{es ? 'Contactar' : 'Get in touch'} →</button>
+      </div>
+    </section>
+  );
+}
 function Home() { return useWide() <= 1024 ? <HomeApp /> : <HomeDesk />; }
 function HomeDesk() {
   const { lang, go } = useApp();
@@ -42,6 +58,7 @@ function HomeDesk() {
   return (
     <div>
       <HeroSlides />
+      <Pitch />
 
       <section className="qy-brand">
         <img loading="lazy" decoding="async" src="assets/byqiyo-logo.png" alt="By QiYo" />

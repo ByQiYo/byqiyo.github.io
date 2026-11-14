@@ -449,16 +449,23 @@ html.qy-snap{scroll-snap-type:y mandatory}
 .qy-col-cards.qy-lab-cards .qy-col-card-cap .qy-eyebrow{color:inherit!important;opacity:.55;font-size:clamp(9px,.8vw,11px)}
 .qy-col-cards.qy-lab-cards .qy-slot{aspect-ratio:4/5!important}
 @media (max-width:700px){.qy-col-cards.qy-lab-cards{max-width:none}.qy-col-cards.qy-lab-cards .qy-col-card-cap{flex-direction:column;gap:2px}}
+/* Presentación bajo la portada */
+.qy-pitch{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"who btns" "t btns";gap:10px 48px;align-items:center;padding:clamp(28px,3.5vw,48px) var(--g);border-bottom:1px solid rgba(128,128,128,.25)}
+.qy-pitch>.qy-eyebrow{grid-area:who}.qy-pitch-t{grid-area:t;font-size:clamp(16px,1.35vw,20px);line-height:1.45;max-width:72ch;text-wrap:pretty}.qy-pitch-t strong{font-weight:600}
+.qy-pitch-btns{grid-area:btns;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.qy-pitch-b{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid currentColor;font-size:14px;font-weight:500;white-space:nowrap;transition:background .2s,color .2s}
+.qy-pitch-b:hover,.qy-pitch-b.on{background:#0A0A0A;color:#fff;opacity:1}.qy-dark .qy-pitch-b:hover,.qy-dark .qy-pitch-b.on{background:#F2F2F2;color:#0A0A0A}
+@media (max-width:1024px){.qy-pitch{grid-template-columns:minmax(0,1fr);grid-template-areas:"who" "t" "btns";padding:40px var(--g)}.qy-pitch-btns{justify-content:flex-start}}
 </style>
 </head>
 <body>
 <div id="root"></div>
 <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" integrity="sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" integrity="sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1" crossorigin="anonymous"></script>
-<script src="web/image-slot.js?v=202611141854"></script>
-<script src="web2/data.js?v=202611141854"></script>
-<script src="lab3d/data.js?v=202611141854"></script>
+<script src="web/image-slot.js?v=202611141901"></script>
+<script src="web2/data.js?v=202611141901"></script>
+<script src="lab3d/data.js?v=202611141901"></script>
 <!-- El código de la web está precompilado en web2/app.build.js (fuentes: web/*.jsx, web2/*.jsx y web2/app.jsx). -->
-<script src="web2/app.build.js?v=202611141854"></script>
+<script src="web2/app.build.js?v=202611141901"></script>
 </body>
 </html>

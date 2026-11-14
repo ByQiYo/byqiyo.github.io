@@ -1309,17 +1309,49 @@ function HeroSlides() {
     }
   }, React.createElement("span", null, "Scroll"), React.createElement("i", null, "\u2193")));
 }
+function Pitch() {
+  var _useApp2 = useApp(),
+    lang = _useApp2.lang,
+    go = _useApp2.go;
+  var es = lang === 'es',
+    p = QY.pitch,
+    c = QY.contact;
+  return React.createElement("section", {
+    className: "qy-pitch"
+  }, React.createElement("span", {
+    className: "qy-eyebrow"
+  }, tr(p.who, lang)), React.createElement("p", {
+    className: "qy-pitch-t"
+  }, tr(p.t, lang), " ", React.createElement("strong", null, tr(p.seek, lang))), React.createElement("div", {
+    className: "qy-pitch-btns"
+  }, c.cv && React.createElement("a", {
+    className: "qy-pitch-b on",
+    href: c.cv,
+    target: "_blank",
+    rel: "noopener"
+  }, es ? 'Descargar CV' : 'Download CV', " \u2193"), c.linkedin && React.createElement("a", {
+    className: "qy-pitch-b",
+    href: c.linkedin,
+    target: "_blank",
+    rel: "noopener"
+  }, "LinkedIn \u2197"), React.createElement("button", {
+    className: "qy-pitch-b",
+    onClick: function onClick() {
+      return go('contact');
+    }
+  }, es ? 'Contactar' : 'Get in touch', " \u2192")));
+}
 function Home() {
   return useWide() <= 1024 ? React.createElement(HomeApp, null) : React.createElement(HomeDesk, null);
 }
 function HomeDesk() {
-  var _useApp2 = useApp(),
-    lang = _useApp2.lang,
-    go = _useApp2.go;
-  var stripWide = useWide() > 700;
   var _useApp3 = useApp(),
-    mobStrip = _useApp3.mobStrip;
-  return React.createElement("div", null, React.createElement(HeroSlides, null), React.createElement("section", {
+    lang = _useApp3.lang,
+    go = _useApp3.go;
+  var stripWide = useWide() > 700;
+  var _useApp4 = useApp(),
+    mobStrip = _useApp4.mobStrip;
+  return React.createElement("div", null, React.createElement(HeroSlides, null), React.createElement(Pitch, null), React.createElement("section", {
     className: "qy-brand"
   }, React.createElement("img", {
     loading: "lazy",
@@ -1434,9 +1466,9 @@ function HomeDesk() {
   }, lang === 'es' ? 'Escribir un mensaje' : 'Send a message', " \u2192")), React.createElement(Footer, null));
 }
 function HomeOld() {
-  var _useApp4 = useApp(),
-    lang = _useApp4.lang,
-    go = _useApp4.go;
+  var _useApp5 = useApp(),
+    lang = _useApp5.lang,
+    go = _useApp5.go;
   var reveal = useReveal();
   return React.createElement("div", null, React.createElement(HeroSlides, null), React.createElement("section", {
     className: "qy-brand"
@@ -4407,7 +4439,7 @@ function HomeApp() {
   var tiles = QY.home.tiles;
   return React.createElement("div", {
     className: "qy-app-home"
-  }, React.createElement(HeroStories, null), React.createElement("section", {
+  }, React.createElement(HeroStories, null), React.createElement(Pitch, null), React.createElement("section", {
     className: "qy-app-intro"
   }, React.createElement("img", {
     loading: "lazy",

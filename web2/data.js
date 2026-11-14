@@ -14,6 +14,11 @@ window.QY = {
     scrollH: L('Desliza para ver los looks', 'Scroll to see the looks'), path: L('Trayectoria', 'Path'),
     author: 'Carmen Álvarez Feriche', authorRole: L('Diseñadora de autor', 'Author designer'),
   },
+  pitch: {
+    who: L('Carmen Álvarez Feriche · Diseñadora de moda', 'Carmen Álvarez Feriche · Fashion designer'),
+    t: L('Estudiante de 4º de Moda en Estación Diseño, Granada. Moda de autor conceptual y sostenible: impresión 3D, plástico reciclado y construcción estructural.', '4th-year Fashion student at Estación Diseño, Granada. Conceptual, sustainable designer fashion: 3D printing, recycled plastic and structural construction.'),
+    seek: L('Busco prácticas en departamento creativo, diseño 3D o taller (confección y patronaje).', 'Looking for an internship in a creative department, 3D design or the workroom (sewing and patternmaking).'),
+  },
   hero: [
     { slot: 'web-hero-1', pos: 'center 40%', posM: '46% center', src: 'assets/opt/home/grupo-rebirth-v3.jpg', col: 'rebirth', cap: L('Rebirth, editorial', 'Rebirth, editorial') },
     { slot: 'web-hero-2', posM: '58% center', src: 'assets/opt/home/thalaira-agua-v2.webp', col: 'thalaira', cap: L('Thalaira, editorial', 'Thalaira, editorial') },
@@ -180,7 +185,9 @@ window.QY = {
     ],
   },
   contact: {
-    email: 'by.qiyo@gmail.com', instagram: '@by.qiyo', instagramUrl: 'https://www.instagram.com/by.qiyo/',
+    // Botones de la presentación en Inicio: se muestran solo cuando tienen enlace.
+  cv: '', linkedin: '',
+  email: 'by.qiyo@gmail.com', instagram: '@by.qiyo', instagramUrl: 'https://www.instagram.com/by.qiyo/',
     reasons: [L('Prensa', 'Press'), L('Colaboración', 'Collaboration'), L('Pasarela / exposición', 'Runway / exhibition'), L('Confección a medida', 'Made to measure'), L('Otro', 'Other')],
   },
 };
