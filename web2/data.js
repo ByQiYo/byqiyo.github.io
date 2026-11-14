@@ -179,9 +179,9 @@ window.QY = {
       { y: '2025', t: L('Exposición de Chaqueta', 'Jacket exhibition'), d: L('Museo de la Piel, Ubrique (Cádiz)', 'Museo de la Piel, Ubrique (Cádiz)') },
       { y: '2025', t: L('XII Pasarela Solidaria Cruz Roja Granada', 'XII Pasarela Solidaria Cruz Roja Granada'), d: L('Thalaira', 'Thalaira') },
       { y: '2025', t: L('Pasarela ANDE', 'ANDE runway'), d: L('Parque de las Ciencias, Granada', 'Parque de las Ciencias, Granada') },
-      { y: '2026', t: L('Pasarela Solidaria Cruz Roja Granada', 'Cruz Roja Granada Charity Runway'), d: L('By QiYo', 'By QiYo') },
+      { y: '2026', t: L('Pasarela Solidaria Cruz Roja Granada', 'Cruz Roja Granada Charity Runway'), d: L('Participación colectiva con Estación Diseño', 'Group show with Estación Diseño') },
+      { y: '2026', t: L('Rebirth, PV 2027', 'Rebirth, SS 2027'), d: L('Colección presentada en septiembre de 2026', 'Collection presented in September 2026') },
       { y: '2026', t: L('Viste la Navidad', 'Viste la Navidad'), d: L('Madrid · próximamente', 'Madrid · coming soon') },
-      { y: '2027', t: L('Rebirth, PV 2027', 'Rebirth, SS 2027'), d: L('Colección en desarrollo', 'Collection in progress') },
     ],
   },
   contact: {
