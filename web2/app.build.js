@@ -977,7 +977,11 @@ function Footer(_ref2) {
     href: QY.contact.instagramUrl,
     target: "_blank",
     rel: "noopener"
-  }, "Instagram ", QY.contact.instagram)), React.createElement("div", {
+  }, "Instagram ", QY.contact.instagram), QY.contact.linkedin && React.createElement("a", {
+    href: QY.contact.linkedin,
+    target: "_blank",
+    rel: "noopener"
+  }, "LinkedIn")), React.createElement("div", {
     className: "qy-footer-base",
     style: {
       color: th.mute,
@@ -2335,7 +2339,12 @@ function Contact() {
     href: QY.contact.instagramUrl,
     target: "_blank",
     rel: "noopener"
-  }, "Instagram ", QY.contact.instagram)), React.createElement("form", {
+  }, "Instagram ", QY.contact.instagram), QY.contact.linkedin && React.createElement("a", {
+    className: "qy-body",
+    href: QY.contact.linkedin,
+    target: "_blank",
+    rel: "noopener"
+  }, "LinkedIn")), React.createElement("form", {
     className: "qy-form",
     onSubmit: function onSubmit(e) {
       e.preventDefault();

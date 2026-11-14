@@ -278,6 +278,7 @@ function Contact() {
           <h1 className="qy-h2">{L.h}</h1>
           <a className="qy-h2 qy-mail" href={'mailto:' + QY.contact.email}>{QY.contact.email}</a>
           <a className="qy-body" href={QY.contact.instagramUrl} target="_blank" rel="noopener">Instagram {QY.contact.instagram}</a>
+          {QY.contact.linkedin && <a className="qy-body" href={QY.contact.linkedin} target="_blank" rel="noopener">LinkedIn</a>}
         </div>
         <form className="qy-form" onSubmit={e => {
           // Sin servidor: el formulario prepara un correo en el programa de email de quien escribe.

@@ -152,7 +152,7 @@ window.QY = {
       body: L('By QiYo en la pasarela ANDE celebrada en el Parque de las Ciencias de Granada.', 'By QiYo at the ANDE runway held at the Parque de las Ciencias in Granada.') },
     { id: 'cruzroja-2026', tag: L('Sept. 2026', 'Sept. 2026'), img: 'img/home-news-thalaira-desfile.jpg', slot: 'web-j-cr26',
       title: L('Pasarela Solidaria Cruz Roja Granada', 'Cruz Roja Granada Charity Runway'),
-      body: L('By QiYo vuelve a la Pasarela Solidaria Cruz Roja Granada.', 'By QiYo returns to the Cruz Roja Granada Charity Runway.') },
+      body: L('By QiYo vuelve a la Pasarela Solidaria Cruz Roja Granada, esta vez en una participación colectiva junto a Estación Diseño.', 'By QiYo returns to the Cruz Roja Granada Charity Runway, this time in a group show with Estación Diseño.') },
     { id: 'navidad-madrid-2026', img: 'assets/opt/home/navidad-madrid-2026.jpg', tag: L('Dic. 2026 · Próximamente', 'Dec. 2026 · Coming soon'), slot: 'web-j-nav26',
       title: L('Viste la Navidad en Madrid', 'Viste la Navidad, Madrid'),
       body: L('Próximamente: By QiYo participará en Viste la Navidad en Madrid.', 'Coming soon: By QiYo will take part in Viste la Navidad in Madrid.') },
@@ -186,7 +186,7 @@ window.QY = {
   },
   contact: {
     // Botones de la presentación en Inicio: se muestran solo cuando tienen enlace.
-  cv: '', portfolio: '', linkedin: '',
+  cv: '', portfolio: '', linkedin: 'https://www.linkedin.com/in/carmen-%C3%A1lvarez-feriche-b9b78844b/',
   email: 'by.qiyo@gmail.com', instagram: '@by.qiyo', instagramUrl: 'https://www.instagram.com/by.qiyo/',
     reasons: [L('Prensa', 'Press'), L('Colaboración', 'Collaboration'), L('Pasarela / exposición', 'Runway / exhibition'), L('Confección a medida', 'Made to measure'), L('Otro', 'Other')],
   },

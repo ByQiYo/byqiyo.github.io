@@ -126,6 +126,7 @@ function Footer({ theme = 'paper' }) {
         <span className="qy-eyebrow" style={{ color: th.mute }}>{tr(QY.ui.nav.contact, lang)}</span>
         <a href={'mailto:' + QY.contact.email}>{QY.contact.email}</a>
         <a href={QY.contact.instagramUrl} target="_blank" rel="noopener">Instagram {QY.contact.instagram}</a>
+        {QY.contact.linkedin && <a href={QY.contact.linkedin} target="_blank" rel="noopener">LinkedIn</a>}
       </div>
       <div className="qy-footer-base" style={{ color: th.mute, borderColor: th.line }}>
         <span style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 20px' }}><span>© 2026 By QiYo · {QY.ui.author}</span>{LEGAL_PAGES.map(p => <button key={p} className="qy-link" onClick={() => go('legal', p)}>{tr(LEGAL_T[p], lang)}</button>)}</span><span style={{ display: 'flex', gap: 20, alignItems: 'center' }}><a href={QY.contact.instagramUrl} target="_blank" rel="noopener" className="qy-link" style={{ color: th.fg }}>Instagram {QY.contact.instagram} ↗</a><LangSwitch /><ModeSwitch /></span>
