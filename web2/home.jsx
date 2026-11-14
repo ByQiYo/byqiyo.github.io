@@ -44,6 +44,7 @@ function Pitch() {
       <p className="qy-pitch-t">{tr(p.t, lang)} <strong>{tr(p.seek, lang)}</strong></p>
       <div className="qy-pitch-btns">
         {c.cv && <a className="qy-pitch-b on" href={c.cv} target="_blank" rel="noopener">{es ? 'Descargar CV' : 'Download CV'} ↓</a>}
+        {c.portfolio && <a className="qy-pitch-b" href={c.portfolio} target="_blank" rel="noopener">{es ? 'Portfolio PDF' : 'Portfolio PDF'} ↓</a>}
         {c.linkedin && <a className="qy-pitch-b" href={c.linkedin} target="_blank" rel="noopener">LinkedIn ↗</a>}
         <button className="qy-pitch-b" onClick={() => go('contact')}>{es ? 'Contactar' : 'Get in touch'} →</button>
       </div>

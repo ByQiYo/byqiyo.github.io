@@ -1329,7 +1329,12 @@ function Pitch() {
     href: c.cv,
     target: "_blank",
     rel: "noopener"
-  }, es ? 'Descargar CV' : 'Download CV', " \u2193"), c.linkedin && React.createElement("a", {
+  }, es ? 'Descargar CV' : 'Download CV', " \u2193"), c.portfolio && React.createElement("a", {
+    className: "qy-pitch-b",
+    href: c.portfolio,
+    target: "_blank",
+    rel: "noopener"
+  }, es ? 'Portfolio PDF' : 'Portfolio PDF', " \u2193"), c.linkedin && React.createElement("a", {
     className: "qy-pitch-b",
     href: c.linkedin,
     target: "_blank",

@@ -186,7 +186,7 @@ window.QY = {
   },
   contact: {
     // Botones de la presentación en Inicio: se muestran solo cuando tienen enlace.
-  cv: '', linkedin: '',
+  cv: '', portfolio: '', linkedin: '',
   email: 'by.qiyo@gmail.com', instagram: '@by.qiyo', instagramUrl: 'https://www.instagram.com/by.qiyo/',
     reasons: [L('Prensa', 'Press'), L('Colaboración', 'Collaboration'), L('Pasarela / exposición', 'Runway / exhibition'), L('Confección a medida', 'Made to measure'), L('Otro', 'Other')],
   },
