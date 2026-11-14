@@ -15,7 +15,7 @@ window.QY = {
     author: 'Carmen Álvarez Feriche', authorRole: L('Diseñadora de autor', 'Author designer'),
   },
   hero: [
-    { slot: 'web-hero-1', posM: '46% center', src: 'assets/opt/home/grupo-rebirth-2.jpg', col: 'rebirth', cap: L('Rebirth, editorial', 'Rebirth, editorial') },
+    { slot: 'web-hero-1', pos: 'center 12%', posM: '46% center', src: 'assets/opt/home/grupo-rebirth-2.jpg', col: 'rebirth', cap: L('Rebirth, editorial', 'Rebirth, editorial') },
     { slot: 'web-hero-2', posM: '58% center', src: 'assets/opt/home/thalaira-agua.jpg', col: 'thalaira', cap: L('Thalaira, editorial', 'Thalaira, editorial') },
     { slot: 'web-hero-3', posM: '55% center', src: 'assets/opt/home/detalle-bolsillo.jpg', col: 'rebirth', cap: L('Rebirth, detalle', 'Rebirth, detail') },
     { slot: 'web-hero-4', posM: '46% center', src: 'img/home-cruzroja-2025-hospital-real.jpg', col: 'thalaira', cap: L('Thalaira, Pasarela Cruz Roja Granada · Hospital Real', 'Thalaira, Cruz Roja Granada Runway · Hospital Real') },
