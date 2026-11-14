@@ -14,3 +14,8 @@ for (const f of files) {
 }
 fs.writeFileSync(path.join(root, 'web2/app.build.js'), out);
 console.log('web2/app.build.js generado (' + (out.length / 1024 | 0) + ' KB)');
+// Cambia la versión de los scripts en index.html para que los navegadores no usen copias antiguas.
+const v = new Date().toISOString().replace(/\D/g, '').slice(0, 12);
+const idx = path.join(root, 'index.html');
+fs.writeFileSync(idx, fs.readFileSync(idx, 'utf8').replace(/(<script src="(?:web|web2|lab3d)\/[^"?]+\.js)(?:\?v=\d+)?"/g, `$1?v=${v}"`));
+console.log('versión de scripts: ' + v);
