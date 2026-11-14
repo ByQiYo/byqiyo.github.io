@@ -15,10 +15,10 @@ window.QY = {
     author: 'Carmen Álvarez Feriche', authorRole: L('Diseñadora de autor', 'Author designer'),
   },
   hero: [
-    { slot: 'web-hero-1', pos: 'center 40%', posM: '46% center', src: 'assets/opt/home/grupo-rebirth-2.jpg', col: 'rebirth', cap: L('Rebirth, editorial', 'Rebirth, editorial') },
-    { slot: 'web-hero-2', posM: '58% center', src: 'assets/opt/home/thalaira-agua.jpg', col: 'thalaira', cap: L('Thalaira, editorial', 'Thalaira, editorial') },
-    { slot: 'web-hero-3', posM: '55% center', src: 'assets/opt/home/detalle-bolsillo.jpg', col: 'rebirth', cap: L('Rebirth, detalle', 'Rebirth, detail') },
-    { slot: 'web-hero-4', posM: '46% center', src: 'img/home-cruzroja-2025-hospital-real.jpg', col: 'thalaira', cap: L('Thalaira, Pasarela Cruz Roja Granada · Hospital Real', 'Thalaira, Cruz Roja Granada Runway · Hospital Real') },
+    { slot: 'web-hero-1', pos: 'center 40%', posM: '46% center', src: 'assets/opt/home/grupo-rebirth-v3.jpg', col: 'rebirth', cap: L('Rebirth, editorial', 'Rebirth, editorial') },
+    { slot: 'web-hero-2', posM: '58% center', src: 'assets/opt/home/thalaira-agua-v2.jpg', col: 'thalaira', cap: L('Thalaira, editorial', 'Thalaira, editorial') },
+    { slot: 'web-hero-3', posM: '55% center', src: 'assets/opt/home/detalle-bolsillo-v2.jpg', col: 'rebirth', cap: L('Rebirth, detalle', 'Rebirth, detail') },
+    { slot: 'web-hero-4', posM: '46% center', src: 'img/home-cruzroja-2025-hospital-real-v2.jpg', col: 'thalaira', cap: L('Thalaira, Pasarela Cruz Roja Granada · Hospital Real', 'Thalaira, Cruz Roja Granada Runway · Hospital Real') },
   ],
   home: {
     claim: L('“No seas diferente, sé único”', '“Don’t be different, be unique”'),
@@ -50,7 +50,7 @@ window.QY = {
     {
       id: 'rebirth', name: 'Rebirth', sub: 'The Shape of Plastic', season: L('PV 2027', 'SS 2027'), theme: 'paper',
       logo: 'assets/rebirth-logo.png', reveal: 'assets/opt/cover-rebirth.jpg', count: 24,
-      cover: 'assets/opt/home/grupo-rebirth-2.jpg', moodboard: 'img/moodboard-rebirth.jpg', runway: 'Estación Diseño',
+      cover: 'assets/opt/home/grupo-rebirth-v3.jpg', moodboard: 'img/moodboard-rebirth.jpg', runway: 'Estación Diseño',
       runwayImgs: ['img/rebirth-runway-run-1.jpg', 'img/rebirth-runway-run-2.jpg', 'img/rebirth-runway-run-3.jpg', 'img/rebirth-runway-run-4.jpg', 'img/rebirth-runway-run-5.jpg', 'img/rebirth-runway-run-6.jpg'],
       editorial: [
         { n: '07', fig: 'figurines/o07.jpg', imgs: ['img/photos-1788256738046-yvct.jpg', 'img/12.jpg', 'img/photos-1788256737978-fgkn.jpg', 'img/photos-1788256738118-odsv.jpg', 'img/16.jpg'] },
@@ -58,7 +58,7 @@ window.QY = {
         { n: '11', fig: 'figurines/o11.jpg', imgs: ['img/36.jpg', 'img/37.jpg', 'img/35.jpg', 'img/38.jpg', 'img/39.jpg', 'img/photoshoot-41.jpg', 'img/photoshoot-42.jpg'] },
         { n: '16', fig: 'figurines/o16.jpg', imgs: ['img/photos-1788256728876-yysy.jpg', 'img/photos-1788256728713-cfdg.jpg', 'img/photos-1788256728807-racj.jpg', 'img/photos-1788256728941-b8ij.jpg', 'img/photos-1788256729270-fvbn.jpg'] },
         { n: '18', fig: 'figurines/o18.jpg', imgs: ['img/photos-1788256717135-rus1.jpg', 'img/photos-1788256717218-lqqx.jpg', 'img/photos-1788256717367-c0fw.jpg', 'img/photos-1788256717299-0nfw.jpg', 'img/photos-1788256717520-2v2y.jpg'] },
-        { n: null, imgs: ['img/30.jpg', 'img/27.jpg', 'img/29.jpg', 'img/33.jpg'] },
+        { n: null, imgs: ['img/30.jpg', 'img/27.jpg', 'img/29-v2.jpg', 'img/33.jpg'] },
       ],
       refsIntro: L('Por eso la obra de todos estos artistas ha inspirado el concepto Rebirth, en el que se hacen presentes técnicas como el ensamblaje aditivo de Aurora Robson y sus diseños biomórficos, o el propio arte con residuos creado por Richterová. También el aceptar la fragmentación como parte del proceso creativo, como puede apreciarse en la obra de Sayaka Ganz, donde el origen del objeto es visible en el resultado final.', 'That is why the work of all these artists has inspired the Rebirth concept, which features techniques such as Aurora Robson’s additive assemblage and biomorphic designs, or the waste art created by Richterová. Also the acceptance of fragmentation as part of the creative process, as seen in the work of Sayaka Ganz, where the origin of the object is visible in the final result.'),
       refs: [
@@ -92,7 +92,7 @@ window.QY = {
     },
     {
       id: 'thalaira', name: 'Thalaira', sub: L('Desde las aguas de Motril', 'From the waters of Motril'), season: L('PV 2026', 'SS 2026'), theme: 'navy',
-      logo: 'assets/thalaira-logo.png', cover: 'assets/opt/home/thalaira-agua.jpg', reveal: 'assets/opt/thalaira/moodboard-main.jpg', count: 10,
+      logo: 'assets/thalaira-logo.png', cover: 'assets/opt/home/thalaira-agua-v2.jpg', reveal: 'assets/opt/thalaira/moodboard-main.jpg', count: 10,
       moodboard: 'assets/opt/thalaira/moodboard-portfolio.jpg', renders: [1,2,3,4,5].map(i => `img/thalaira-render-${i}.jpg`), runway: 'XII Pasarela Solidaria Cruz Roja Granada 2025',
       editorial: [{ n: '01', name: 'Galene', imgs: ['img/IMG-20251215-WA0039.jpg', 'img/IMG-20251215-WA0093.jpg', 'img/IMG-20251215-WA0124.jpg', 'img/IMG-20251215-WA0125.jpg', 'img/IMG-20251215-WA0161.jpg'] }, { n: '02', name: 'Ondine', imgs: ['img/IMG-20251215-WA0153.jpg', 'img/IMG-20251215-WA0157.jpg', 'img/IMG-20251215-WA0162.jpg', 'img/IMG-20251215-WA0164.jpg', 'img/IMG-20251215-WA0183.jpg', 'img/IMG-20251215-WA0185.jpg'] }, { n: '03', name: 'Cauda', imgs: ['img/IMG-20251215-WA0141.jpg', 'img/IMG-20251215-WA0144.jpg', 'img/IMG-20251215-WA0173.jpg'] }, { n: '05', name: 'Halios', imgs: ['img/IMG-20251215-WA0072.jpg', 'img/IMG-20251215-WA0152.jpg', 'img/IMG-20251215-WA0155.jpg', 'img/IMG-20251215-WA0163.jpg', 'img/IMG-20251215-WA0171.jpg', 'img/IMG-20251219-WA0029.jpg', 'img/IMG-20251219-WA0060.jpg'] }, { n: '06', name: 'Nausicaa', imgs: ['img/IMG-20251215-WA0146.jpg'] }, { n: '10', name: 'Thalassa', imgs: ['img/IMG-20251215-WA0116.jpg', 'img/IMG-20251215-WA0154.jpg', 'img/IMG-20251215-WA0169.jpg', 'img/IMG-20251215-WA0172.jpg', 'img/IMG-20251215-WA0178.jpg', 'img/IMG-20251215-WA0179.jpg'] }, { name: L('Mixto', 'Mixed'), imgs: ['img/IMG-20251215-WA0087.jpg', 'img/IMG-20251215-WA0097.jpg', 'img/IMG-20251215-WA0099.jpg', 'img/IMG-20251215-WA0122.jpg', 'img/IMG-20251215-WA0130.jpg', 'img/IMG-20251215-WA0135.jpg', 'img/IMG-20251215-WA0139.jpg', 'img/IMG-20251215-WA0142-ca6a7d52.jpg', 'img/IMG-20251215-WA0150.jpg', 'img/IMG-20251215-WA0151.jpg', 'img/IMG-20251215-WA0156.jpg', 'img/IMG-20251215-WA0158.jpg', 'img/IMG-20251215-WA0159.jpg', 'img/IMG-20251215-WA0165.jpg', 'img/IMG-20251215-WA0166.jpg', 'img/IMG-20251215-WA0168.jpg', 'img/IMG-20251215-WA0170.jpg', 'img/IMG-20251215-WA0174.jpg', 'img/IMG-20251215-WA0175.jpg', 'img/IMG-20251215-WA0177.jpg', 'img/IMG-20251215-WA0180.jpg', 'img/IMG-20251215-WA0181.jpg', 'img/IMG-20251215-WA0182.jpg', 'img/IMG-20251215-WA0184.jpg'] }],
       runwayImgs: [{ src: 'assets/thalaira-runway/look-1-thalassa.mp4', video: true }, { src: 'img/thalaira-runway-run-1.jpg', h: true }, { src: 'img/thalaira-runway-run-3.jpg', h: true }, { src: 'img/thalaira-runway-run-7.jpg', h: true }, 'img/thalaira-runway-run-2.jpg', 'img/thalaira-runway-run-4.jpg', 'img/thalaira-runway-run-5.jpg', 'img/thalaira-runway-run-6.jpg'],
@@ -139,7 +139,7 @@ window.QY = {
     { id: 'universitarios', name: 'Proyectos universitarios', year: '', card: 'assets/opt/uni/corse-impreso.jpg', kind: L('Proyectos', 'Projects'), specs: [{ id: 'sastreria', src: 'assets/opt/uni/sastreria.jpg', t: L('Sastrería y traje', 'Tailoring and suits') }, { id: 'corseteria', src: 'assets/opt/uni/corseteria.jpg', t: L('Corsetería y lencería', 'Corsetry and lingerie') }, { id: 'bebe', src: 'assets/opt/uni/bebe.jpg', t: L('Ropa de bebé · 2º Moda', 'Babywear · 2nd year Fashion') }, { id: 'moulage', src: 'assets/opt/uni/moulage.jpg', t: L('Modelaje sobre maniquí', 'Draping on the stand') }], works: [{ id: 'corse-impreso', src: 'assets/opt/uni/corse-impreso.jpg', t: L('Corsé impreso en 3D', '3D-printed corset') }, { id: 'vestido-metal', src: 'assets/opt/uni/vestido-metal.jpg', t: L('Vestido de metal', 'Metal dress') }], d: L('Trabajos realizados durante la formación universitaria en Moda.', 'Work produced during university fashion studies.') },
   ],
   journal: [
-    { id: 'cruzroja-2025', tag: L('Sept. 2025', 'Sept. 2025'), slot: 'web-j-cr25', img: 'img/home-cruzroja-2025-hospital-real.jpg',
+    { id: 'cruzroja-2025', tag: L('Sept. 2025', 'Sept. 2025'), slot: 'web-j-cr25', img: 'img/home-cruzroja-2025-hospital-real-v2.jpg',
       title: L('XII Pasarela Solidaria Cruz Roja Granada', 'XII Cruz Roja Granada Charity Runway'),
       body: L('Thalaira desfila en la XII Pasarela Solidaria Cruz Roja Granada con 4 looks femeninos y 2 masculinos.', 'Thalaira shows at the XII Cruz Roja Granada Charity Runway with 4 womenswear and 2 menswear looks.') },
     { id: 'ande-2025', img: 'assets/opt/home/ande-2025.jpg', tag: L('Sept. 2025', 'Sept. 2025'), slot: 'web-j-ande25',
