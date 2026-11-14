@@ -269,7 +269,7 @@ function Contact() {
   const { lang } = useApp();
   const [sent, setSent] = useState(false);
   const [reason, setReason] = useState(0);
-  const L = lang === 'es' ? { name: 'Nombre', email: 'Email', msg: 'Mensaje', ok: 'Gracias. Te respondo en breve.', reason: 'Motivo', h: 'Prensa, colaboraciones, pasarelas, exposiciones y confección a medida.' } : { name: 'Name', email: 'Email', msg: 'Message', ok: 'Thank you. I will reply soon.', reason: 'Reason', h: 'Press, collaborations, runways, exhibitions and made-to-measure.' };
+  const L = lang === 'es' ? { name: 'Nombre', email: 'Email', msg: 'Mensaje', ok: 'Se ha abierto tu correo con el mensaje preparado: solo tienes que pulsar Enviar. Si no se abre, escríbeme a ' + QY.contact.email + '.', reason: 'Motivo', h: 'Prensa, colaboraciones, pasarelas, exposiciones y confección a medida.' } : { name: 'Name', email: 'Email', msg: 'Message', ok: 'Your email app has opened with the message ready: just press Send. If it did not open, write to ' + QY.contact.email + '.', reason: 'Reason', h: 'Press, collaborations, runways, exhibitions and made-to-measure.' };
   return (
     <div>
       <section className="qy-contact">
@@ -279,14 +279,22 @@ function Contact() {
           <a className="qy-h2 qy-mail" href={'mailto:' + QY.contact.email}>{QY.contact.email}</a>
           <a className="qy-body" href={QY.contact.instagramUrl} target="_blank" rel="noopener">Instagram {QY.contact.instagram}</a>
         </div>
-        <form className="qy-form" onSubmit={e => { e.preventDefault(); setSent(true); }}>
+        <form className="qy-form" onSubmit={e => {
+          // Sin servidor: el formulario prepara un correo en el programa de email de quien escribe.
+          e.preventDefault();
+          const f = e.currentTarget;
+          const subject = '[' + tr(QY.contact.reasons[reason], 'es') + '] ' + f.nombre.value;
+          const body = f.mensaje.value + '\n\n— ' + f.nombre.value + ' · ' + f.correo.value;
+          location.href = 'mailto:' + QY.contact.email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+          setSent(true);
+        }}>
           <div className="qy-field full"><span className="qy-eyebrow qy-mute">{L.reason}</span>
             <div className="qy-chips qy-chips-line">{QY.contact.reasons.map((r, i) => <button type="button" key={i} className={reason === i ? 'on' : ''} onClick={() => setReason(i)}>{tr(r, lang)}</button>)}</div>
           </div>
-          <label className="qy-field"><span className="qy-eyebrow qy-mute">{L.name}</span><input required /></label>
-          <label className="qy-field"><span className="qy-eyebrow qy-mute">{L.email}</span><input type="email" required /></label>
-          <label className="qy-field full"><span className="qy-eyebrow qy-mute">{L.msg}</span><textarea rows="5" required></textarea></label>
-          <div className="qy-field full">{sent ? <div className="qy-h3">{L.ok}</div> : <button className="qy-submit" type="submit">{tr(QY.ui.send, lang)} →</button>}</div>
+          <label className="qy-field"><span className="qy-eyebrow qy-mute">{L.name}</span><input name="nombre" autoComplete="name" required /></label>
+          <label className="qy-field"><span className="qy-eyebrow qy-mute">{L.email}</span><input name="correo" type="email" autoComplete="email" required /></label>
+          <label className="qy-field full"><span className="qy-eyebrow qy-mute">{L.msg}</span><textarea name="mensaje" rows="5" required></textarea></label>
+          <div className="qy-field full">{sent ? <div className="qy-body">{L.ok}</div> : <button className="qy-submit" type="submit">{tr(QY.ui.send, lang)} →</button>}</div>
         </form>
       </section>
       <Footer />

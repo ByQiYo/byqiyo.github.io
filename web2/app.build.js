@@ -2271,14 +2271,14 @@ function Contact() {
     name: 'Nombre',
     email: 'Email',
     msg: 'Mensaje',
-    ok: 'Gracias. Te respondo en breve.',
+    ok: 'Se ha abierto tu correo con el mensaje preparado: solo tienes que pulsar Enviar. Si no se abre, escríbeme a ' + QY.contact.email + '.',
     reason: 'Motivo',
     h: 'Prensa, colaboraciones, pasarelas, exposiciones y confección a medida.'
   } : {
     name: 'Name',
     email: 'Email',
     msg: 'Message',
-    ok: 'Thank you. I will reply soon.',
+    ok: 'Your email app has opened with the message ready: just press Send. If it did not open, write to ' + QY.contact.email + '.',
     reason: 'Reason',
     h: 'Press, collaborations, runways, exhibitions and made-to-measure.'
   };
@@ -2302,6 +2302,10 @@ function Contact() {
     className: "qy-form",
     onSubmit: function onSubmit(e) {
       e.preventDefault();
+      var f = e.currentTarget;
+      var subject = '[' + tr(QY.contact.reasons[reason], 'es') + '] ' + f.nombre.value;
+      var body = f.mensaje.value + '\n\n— ' + f.nombre.value + ' · ' + f.correo.value;
+      location.href = 'mailto:' + QY.contact.email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       setSent(true);
     }
   }, React.createElement("div", {
@@ -2324,25 +2328,30 @@ function Contact() {
   }, React.createElement("span", {
     className: "qy-eyebrow qy-mute"
   }, L.name), React.createElement("input", {
+    name: "nombre",
+    autoComplete: "name",
     required: true
   })), React.createElement("label", {
     className: "qy-field"
   }, React.createElement("span", {
     className: "qy-eyebrow qy-mute"
   }, L.email), React.createElement("input", {
+    name: "correo",
     type: "email",
+    autoComplete: "email",
     required: true
   })), React.createElement("label", {
     className: "qy-field full"
   }, React.createElement("span", {
     className: "qy-eyebrow qy-mute"
   }, L.msg), React.createElement("textarea", {
+    name: "mensaje",
     rows: "5",
     required: true
   })), React.createElement("div", {
     className: "qy-field full"
   }, sent ? React.createElement("div", {
-    className: "qy-h3"
+    className: "qy-body"
   }, L.ok) : React.createElement("button", {
     className: "qy-submit",
     type: "submit"
