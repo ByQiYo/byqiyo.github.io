@@ -167,7 +167,7 @@ window.QY = {
       tools: [
         { g: 'Adobe', items: ['Illustrator', 'Photoshop', 'InDesign'] },
         { g: L('Diseño 3D', '3D design'), items: ['CLO3D'] },
-        { g: L('Diseño y ofimática', 'Design and office'), items: ['Canva', 'Excel'] },
+        { g: L('Diseño y ofimática', 'Design and office'), items: ['Canva', 'Microsoft Office', 'Google Workspace'] },
         { g: L('Inteligencia artificial', 'Artificial intelligence'), items: ['Claude', 'OpenAI'] },
       ],
     },
