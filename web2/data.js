@@ -124,7 +124,7 @@ window.QY = {
     { tag: 'Thalaira', date: L('2025', '2025'), slot: 'web-news-3', src: 'img/home-news-thalaira-desfile.jpg', to: ['entry', 'cruzroja-2025'], t: L('XII Pasarela Solidaria Cruz Roja Granada', 'XII Pasarela Solidaria Cruz Roja Granada') },
   ],
   projects: [
-    { id: 'agora', name: 'Americana Ágora', year: L('2º Moda', '2nd year Fashion'), kind: L('Proyecto de Moda I', 'Fashion Project I'), card: 'assets/opt/home/tile-agora.jpg',
+    { id: 'agora', link: { url: 'https://proyectopremiosgoya25.estaciondiseno.es/chaquetasinspiradas/2009-agora/', t: L('Ver la publicación en Estación Diseño · Proyecto Premios Goya', 'See the feature at Estación Diseño · Goya Awards project') }, name: 'Americana Ágora', year: L('2º Moda', '2nd year Fashion'), kind: L('Proyecto de Moda I', 'Fashion Project I'), card: 'assets/opt/home/tile-agora.jpg',
       d: L('Americana inspirada en la película Ágora (Alejandro Amenábar, 2009) y en la figura de Hipatia de Alejandría.', 'A blazer inspired by the film Agora (Alejandro Amenábar, 2009) and the figure of Hypatia of Alexandria.'),
       cover: 'assets/opt/home/tile-agora.jpg',
       film: { t: L('Sobre la película', 'About the film'), items: [L('Película de 2009, dirigida por Alejandro Amenábar', '2009 film directed by Alejandro Amenábar'), L('Rachel Weisz, Oscar Isaac y Max Minghella', 'Rachel Weisz, Oscar Isaac and Max Minghella'), L('Drama histórico galardonado con 7 Goyas', 'Historical drama, winner of 7 Goya awards')], themes: [L('Lucha por el conocimiento', 'The struggle for knowledge'), L('Conflicto religioso', 'Religious conflict'), L('Papel de la mujer', 'The role of women'), L('Intolerancia y violencia', 'Intolerance and violence'), L('Poder y política', 'Power and politics')] },

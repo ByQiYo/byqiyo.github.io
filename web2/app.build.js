@@ -2852,7 +2852,16 @@ function Project(_ref6) {
     eyebrow: tr(p.kind, lang) + (tr(p.year, lang) ? ' · ' + tr(p.year, lang) : ''),
     title: p.name,
     lead: tr(p.d, lang)
-  }), p.specs ? React.createElement("section", {
+  }), p.link && React.createElement("section", {
+    style: {
+      padding: '0 var(--g) clamp(32px,4vw,56px)'
+    }
+  }, React.createElement("a", {
+    className: "qy-cta",
+    href: p.link.url,
+    target: "_blank",
+    rel: "noopener"
+  }, tr(p.link.t, lang), " \u2197")), p.specs ? React.createElement("section", {
     className: "qy-block"
   }, React.createElement("div", {
     className: "qy-proj-specs"
