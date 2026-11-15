@@ -166,7 +166,7 @@ window.QY = {
       langs: [{ t: L('Español', 'Spanish'), l: L('Nativo', 'Native') }, { t: L('Inglés', 'English'), l: L('B2/C1 hablado', 'B2/C1 spoken') }],
       tools: [
         { g: 'Adobe', items: ['Illustrator', 'Photoshop', 'InDesign'] },
-        { g: L('Diseño 3D', '3D design'), items: ['CLO3D'] },
+        { g: L('Diseño 3D', '3D design'), items: ['CLO3D', 'AutoCAD', 'Tinkercad'] },
         { g: L('Diseño y ofimática', 'Design and office'), items: ['Canva', 'Microsoft Office', 'Google Workspace'] },
         { g: L('Inteligencia artificial', 'Artificial intelligence'), items: ['Claude', 'OpenAI'] },
       ],
